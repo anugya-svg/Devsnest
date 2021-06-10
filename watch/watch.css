@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+
+    
+}
+h1{
+    color:grey
+}
+@keyframes spin {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+.clock{
+    background-color: black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    height:200px;
+    width:200px;
+    border: 15px solid grey;
+    border-radius: 50%;
+    box-shadow: 0 0 98px 6px rgba(221, 212, 212, 0.4);
+    transform: translate(-50%,-50%);
+}
+.clock:after{
+    position: absolute;
+    content:'';
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:7px solid grey;
+    border-radius: 50%;
+}
+.hour{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:50px;
+    border: 2px solid red;
+    transform-origin: top left;
+    animation: spin 12000s normal linear infinite;
+    
+    
+}
+.min{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:70px;
+    border: 2px solid blue;
+    transform-origin: top left;
+    animation: spin 3600s normal linear infinite;
+   
+}
+.sec{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:95px;
+    border: 2px solid green;
+    transform-origin: top left;
+    animation: spin 60s normal linear infinite;
+    
+}
