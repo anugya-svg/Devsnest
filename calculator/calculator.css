@@ -29,7 +29,7 @@ button{
 .ac{
     width: 140px;
     height:50px;
-    background-color:#F9B208;
+    background-color:#3C8DAD;
 }
 .val{
     height:100px;
@@ -42,7 +42,7 @@ button{
     overflow:hidden;
 }
 .equal{
-    background-color:#F9B208;
+    background-color:#3C8DAD;
 }
 h2{
     color:#91C788;
