@@ -6,7 +6,7 @@ body{
     width:370px;
     background-color: #5d5f63;
     border-radius: 2em;
-    padding:7px;
+    padding:10px;
     -moz-box-shadow: 10px 10px 16px #000000;
     -webkit-box-shadow: 10px 10px 16px #000000;
     box-shadow: 10px 10px 16px #000000;
@@ -25,6 +25,16 @@ button{
     margin-bottom: 0.5em;
     font-weight: bold;
     font-size: large;
+    box-shadow: 0 3px #999;
+}
+button:hover{
+    background-color: #DA7F8F;
+
+}
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
 }
 .ac{
     width: 140px;
@@ -36,14 +46,24 @@ button{
     text-align: right;
     background-color: #060709;
     color:white;
-    margin-bottom: 4px;
+    margin-top:4px;
+    margin-bottom: 6px;
     border-radius: 1em;
     padding:6px;
-    overflow:hidden;
+    
 }
 .equal{
     background-color:#3C8DAD;
 }
 h2{
+    
     color:#91C788;
+    /* text-overflow:ellipsis */
+}
+.overflow{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    direction: ltr;
+    
 }
