@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:wght@500&display=swap');
+
+body{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+.container{
+    width:420px;
+    height:420px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* margin: 0 auto; */
+    background-color:#421e0c;
+    display:flex;
+    flex-wrap: wrap;
+}
+.text{
+    width:440px;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.main{
+    font-size:xx-large;
+    font-weight: bolder;
+    width:100px;
+    /* border:0; */
+}
+.anu{
+    width:40px;
+    height:40px;
+    background-color:#B4846C;
+    border:1px solid blanchedalmond;
+}
+.anu:hover{
+    background-color: rgb(253, 250, 246);
+    opacity:0.1;
+}
+.clicked{
+    background-color: #421e0c;
+}
