@@ -50,10 +50,10 @@ body{
 }
 .score_text{
     background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     text-align: center;
     position:fixed;
-    width:640px;
+    width:100%;
     z-index:1;
     margin-bottom: 50px;
 }
