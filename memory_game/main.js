@@ -4,12 +4,19 @@ let hasflip=true;
 let firstcard,secondcard;
 let score=30;
 let lockBoard=false;
+let total=0;
 text.innerText=`Turns Left:${score}`;
 function restart()
 {
 for (let i of clicked)
 {   
     i.addEventListener('click',()=>{
+        if(total===6)
+        {
+            if(confirm('Congratulations!')){
+                window.location.reload();  
+            }
+        }
         if(lockBoard===false)
         {   
             console.log(i);
@@ -35,8 +42,10 @@ for (let i of clicked)
             {
                 secondcard=i;
                 hasflip=true;
+                
                 if(firstcard.dataset.val===secondcard.dataset.val)
                 {
+                    total++;
                 console.log('yes');
                 i.removeEventListener('click',()=>{
                     console.log("removed");
