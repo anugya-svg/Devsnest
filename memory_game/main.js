@@ -18,10 +18,11 @@ for (let i of clicked)
             score--;
             text.innerText=`Turns Left:${score}`;
             if(score===-1)
-            {
+            {   setTimeout(()=>{
                 if(confirm('GameOver ! You have used 30 moves :(')){
                     window.location.reload();  
                 }
+                },500);
                 
             }
             console.log("fast");
@@ -53,8 +54,9 @@ for (let i of clicked)
                 setTimeout(() => {
                     firstcard.classList.remove('flip');
                     secondcard.classList.remove('flip');
+                    lockBoard=false;
                 }, 1000);
-                lockBoard=false;
+                // lockBoard=false;
                     console.log('no');
                 }
             }
@@ -65,7 +67,7 @@ for (let i of clicked)
                     if(confirm('Congratulations!')){
                         window.location.reload();  
                     }
-                }, 2000);
+                }, 1000);
                     
             }
         }
