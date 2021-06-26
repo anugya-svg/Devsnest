@@ -53,7 +53,7 @@ body{
     backdrop-filter: blur(2px);
     text-align: center;
     position:fixed;
-    width:100%;
+    width:calc((25%-10px)*4);
     z-index:1;
     margin-bottom: 50px;
 }
