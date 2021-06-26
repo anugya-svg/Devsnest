@@ -13,7 +13,7 @@ for (let i of clicked)
         console.log(i);
         score--;
         text.innerText=`Turns Left:${score}`;
-        if(score===0)
+        if(score===-1)
         {
             if(confirm('GameOver ! You have used 30 moves :(')){
                 window.location.reload();  
