@@ -10,48 +10,51 @@ function restart()
 for (let i of clicked)
 {   
     i.addEventListener('click',()=>{
-        console.log(i);
-        score--;
-        text.innerText=`Turns Left:${score}`;
-        if(score===-1)
-        {
-            if(confirm('GameOver ! You have used 30 moves :(')){
-                window.location.reload();  
-            }
-            
-        }
-       
-        i.classList.add('flip');
-        if(lockBoard===true)return;
-        if(hasflip===true)
-        {
-            firstcard=i;
-            hasflip=false;
-        }
-        else if(hasflip===false)
-        {
-            secondcard=i;
-            hasflip=true;
-            if(firstcard.dataset.val===secondcard.dataset.val)
+        if(lockBoard===false)
+        {   
+            console.log(i);
+            score--;
+            text.innerText=`Turns Left:${score}`;
+            if(score===-1)
             {
-            console.log('yes');
-            i.removeEventListener('click',()=>{
-                console.log("removed");
-            });
-            
+                if(confirm('GameOver ! You have used 30 moves :(')){
+                    window.location.reload();  
+                }
+                
             }
-            else
-            {
-                lockBoard=true;
-               setTimeout(() => {
-                   firstcard.classList.remove('flip');
-                   secondcard.classList.remove('flip');
-               }, 800);
-               lockBoard=false;
-                console.log('no');
-            }
-        }
+            console.log("fast");
+            i.classList.add('flip');
         
+            if(hasflip===true)
+            {
+                firstcard=i;
+                hasflip=false;
+                
+            }
+            else if(hasflip===false)
+            {
+                secondcard=i;
+                hasflip=true;
+                if(firstcard.dataset.val===secondcard.dataset.val)
+                {
+                console.log('yes');
+                i.removeEventListener('click',()=>{
+                    console.log("removed");
+                });
+                
+                }
+                else
+                {
+                    lockBoard=true;
+                setTimeout(() => {
+                    firstcard.classList.remove('flip');
+                    secondcard.classList.remove('flip');
+                }, 1000);
+                lockBoard=false;
+                    console.log('no');
+                }
+            }
+        }
     });
 
 }
