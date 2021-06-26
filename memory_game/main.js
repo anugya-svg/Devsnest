@@ -11,12 +11,7 @@ function restart()
 for (let i of clicked)
 {   
     i.addEventListener('click',()=>{
-        if(total===6)
-        {
-            if(confirm('Congratulations!')){
-                window.location.reload();  
-            }
-        }
+        
         if(lockBoard===false)
         {   
             console.log(i);
@@ -31,7 +26,7 @@ for (let i of clicked)
             }
             console.log("fast");
             i.classList.add('flip');
-        
+            
             if(hasflip===true)
             {
                 firstcard=i;
@@ -62,6 +57,16 @@ for (let i of clicked)
                 lockBoard=false;
                     console.log('no');
                 }
+            }
+            
+            if(total===6)
+            {
+                setTimeout(() => {
+                    if(confirm('Congratulations!')){
+                        window.location.reload();  
+                    }
+                }, 2000);
+                    
             }
         }
     });
