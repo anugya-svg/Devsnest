@@ -10,7 +10,7 @@
 - [Tha 8-100daycss](https://anugya-svg.github.io/Devsnest/100daycss/index.html)
 - [Tha 9-box_dom](https://anugya-svg.github.io/Devsnest/box_dom/index.html)
 - [Tha 10-Memory_Game](https://anugya-svg.github.io/Devsnest/memory_game/index.html)
-
+- [Tha 11-Js_Quiz](https://anugya-svg.github.io/Devsnest/js_quiz/index.html)
 
 
 
