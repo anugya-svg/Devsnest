@@ -26,11 +26,10 @@ h1{
     height: 5vh;
     border-radius: 10px;
     font-family: 'Press Start 2P', cursive;
+    text-align:center;
 }
 .container{
-    color:black;
-    background-color: #dfe0e4;
-    width:300px;
+    
     position:absolute;
     top:50%;
     left:50%;
@@ -38,10 +37,12 @@ h1{
     transform:translate(-50%,-50%);
     /* z-index:4; */
 }
-.d-add{
-    display:block;
-    z-index:1;
+.mark{
+    border:2px solid white;
 }
-.d-rem{
-    display:none;
+.right{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
 }
