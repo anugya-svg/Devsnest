@@ -13,13 +13,19 @@ const answer=document.querySelector('.ans');
 let score=0;
 let indx=0;
 let len=ques.length;
+let marks=document.querySelector('.score');
+marks.innerText=`SCORE :${score}`;
 function newques()
 {   console.log("index" +indx);
     console.log("answer" +correct[indx]);
     if(indx===len)
     {
-        location.href="end.html";
+        setTimeout(()=>{
+            location.href="end.html";
+        },1000)
+        
     }
+    marks.innerText=`SCORE :${score}`;
     let hascheck=true;
     
     question.innerText=ques[indx];
@@ -65,7 +71,9 @@ function newques()
                 console.log("correct");
                 i.classList.add('right');
                 
-                newques();
+                setTimeout(()=>{
+                    newques();
+                },1500)
                 
                 
             }
