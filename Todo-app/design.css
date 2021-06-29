@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E6E7EE;
+    font-family: 'Benne', serif;
+    overflow-y: scroll;
+}
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #E6E7EE;
+    border: 1px solid #d1d9e6;
+    border-radius: 5px;
+    font-size: medium;
+    padding:10px 20px;
+    width: 60vw;
+    margin:50px;
+    /* overflow-y:scroll; */
+   /* height:100vh; */
+   
+}
+.outside {
+    -webkit-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+  }
+  .write{
+      /* position:fixed; */
+      margin:1%;
+      width:80%;
+      /* height:3%; */
+      background-color: #E6E7EE;
+      border-radius:6px;
+      border:1px solid #d1d9e6;
+      padding:5px;
+      font-family: 'Benne', serif;
+      font-size: 1.5em;
+      color:black;
+  }
+  .btn{
+      /* position:fixed; */
+    background-color: #E6E7EE;
+    width:16%;
+    height:50px;
+    border:1px solid #d1d9e6;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .inside{
+    box-shadow: inset -3px -3px 7px #ffffffb0, 
+    inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+  }
+  .btn:hover{
+    cursor: pointer;
+    -webkit-box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+          box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  }
+  .task{
+      z-index:1;
+      background-color: #E6E7EE;
+      border:1px solid #d1d9e6;
+      font-size: 1.2em;
+      font-family: 'Benne', serif;
+      margin:10px;
+      padding:1px 5px;
+      font-weight: bolder;
+      overflow-wrap:break-word;
+  }
+  h1{
+      /* position:fixed; */
+      text-align: center;
+      border:1px solid #d1d9e6;
+      background-color: #E6E7EE;
+      -webkit-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    margin:5px;
+
+  }
+  /* img{
+      width:6%;
+      float:right;
+      z-index:2;
+  } */
+  .fas{
+      border:1px solid #d1d9e6 ;
+      border-radius: 50%;
+      padding:5px;
+      float:right;
+      box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    margin:5px;
+  }
+  .fas:hover{
+    cursor: pointer;
+    -webkit-box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+          box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+        color:red;
+  }
+  .scroll{
+      /* height:100vh; */
+      overflow-y: scroll;
+  }
+  /* ::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;  
+} */
