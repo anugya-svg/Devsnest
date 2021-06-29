@@ -20,7 +20,6 @@ btn.addEventListener('click',()=>{
     span.appendChild(dlt);
     task.appendChild(span);
     span.classList.add('img');
-    console.log(newdiv);
     if(k===5)
     {
         newdiv.style.height="300px";
