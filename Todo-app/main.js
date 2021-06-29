@@ -4,10 +4,11 @@ const content=document.querySelector('.write');
 const newdiv=document.createElement('div');
 main.appendChild(newdiv);
 newdiv.classList.add('scroll');
-const k=0;
+let k=0;
 btn.addEventListener('click',()=>{
     let text=content.value;
     if(text!=""){
+       k++;
     const task=document.createElement('div');
     task.innerText=text;
     newdiv.appendChild(task);
@@ -19,6 +20,12 @@ btn.addEventListener('click',()=>{
     span.appendChild(dlt);
     task.appendChild(span);
     span.classList.add('img');
-    console.log(span);
+    console.log(newdiv);
+    if(k===5)
+    {
+        newdiv.style.height="300px";
+        newdiv.style.overflowY="scroll";
+        
+    }
     }
 })
