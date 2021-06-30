@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     padding:0;
     margin:0;
@@ -6,7 +6,7 @@
 }
 body{
     background-color: #E6E7EE;
-    font-family: 'Benne', serif;
+    font-family: 'Lobster', cursive;
     overflow-y: scroll;
 }
 .container{
@@ -34,16 +34,16 @@ body{
       background-color: #E6E7EE;
       border-radius:6px;
       border:1px solid #d1d9e6;
-      padding:5px;
-      font-family: 'Benne', serif;
-      font-size: 1.5em;
+      padding:8px;
+      font-family: 'Lobster', cursive;
+      font-size: 1.8em;
       color:black;
   }
   .btn{
-     
+     margin-top: 0;
     background-color: #E6E7EE;
     width:16.2%;
-    height:50px;
+    height:40px;
     border:1px solid #d1d9e6;
     font-size: 0.8em;
     font-weight: bolder;
@@ -61,11 +61,11 @@ body{
       z-index:1;
       background-color: #E6E7EE;
       border:1px solid #d1d9e6;
-      font-size: 1.2em;
-      font-family: 'Benne', serif;
+      font-size: 1.8em;
+      font-family: 'Lobster', cursive;
       margin:10px;
       padding:1px 5px;
-      font-weight: bolder;
+      /* font-weight: bold; */
       overflow-wrap:break-word;
   }
   h1{
@@ -85,7 +85,7 @@ body{
       padding:5px;
       float:right;
       box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-    margin:5px;
+    
   }
   .fas:hover{
     cursor: pointer;
