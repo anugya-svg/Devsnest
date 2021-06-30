@@ -16,8 +16,11 @@ function addElement(text)
     content.value="";
     span=document.createElement('span');
     check=document.createElement('span');
+    
     dlt=document.createElement('i');
+    dlt.dataset.val=1;
     box=document.createElement('i');
+    box.dataset.val=2;
     box.classList.add('far', 'fa-square');
     dlt.classList.add('fas', 'fa-trash-alt');
     check.appendChild(box);
@@ -34,46 +37,7 @@ function addElement(text)
         newdiv.style.height="300px";
         newdiv.style.overflowY="scroll";
         
-    }
-    let dltprop=document.querySelectorAll('.fas');
-    
-    for(let i of dltprop)
-    {
-        i.addEventListener('click',()=>{
-            console.log(i.parentNode.parentNode.innerText);
-            const toBEdeleted=i.parentNode.parentNode;
-            toBEdeleted.style.display='none';
-            k--;
-            if(k<5)
-            {
-                newdiv.style.height="";
-                newdiv.style.overflowY="";
-            }
-            localStorage.removeItem(toBEdeleted.innerText);
-        })
-    } 
-    
-    // console.log(checker.length);
-    let p=0;
-    let checker=document.querySelectorAll('.far');
-    // document.querySelector('.scroll').addEventListener('click',(e)=>{
-    //     console.log(e.target.classList);
-    //     e.target.classList.toggle('fa-check-square');
-    //     e.target.classList.toggle('fa-square');
-
-    // })
-
-    // for(let j of checker)
-    // {   
-    //     console.log(j);
-    //     j.addEventListener('click',function(){
-    //         console.log(j.classList.contains('fa-check-square'));
-    //             console.log(j.parentNode.parentNode.innerText);
-    //             j.classList.toggle('fa-check-square');
-    //             j.classList.toggle('fa-square');
-    //     }) 
-    // }  
-    
+    }  
     
 }
 function searchKeyPress(e)
@@ -105,8 +69,23 @@ btn.addEventListener('click',()=>{
     }
 })
 document.querySelector('.scroll').addEventListener('click',(e)=>{
-    console.log(e.target.classList);
+    console.log(e.target.dataset.val);
+    let wtf=e.target.dataset.val;
+    if(wtf==="2"){
     e.target.classList.toggle('fa-check-square');
     e.target.classList.toggle('fa-square');
+    }
+    if(wtf==="1")
+    {
+        k--;
+        if(k<5)
+        {
+            newdiv.style.height="";
+            newdiv.style.overflowY="";
+        }
+        console.log(e.target.parentNode.parentNode.remove);
+        localStorage.removeItem(e.target.parentNode.parentNode.innerText);
+        e.target.parentNode.parentNode.remove();
+    }
 
 })
