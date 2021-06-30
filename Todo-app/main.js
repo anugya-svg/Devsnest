@@ -40,6 +40,7 @@ function addElement(text)
     for(let i of dltprop)
     {
         i.addEventListener('click',()=>{
+            console.log(i.parentNode.parentNode.innerText);
             const toBEdeleted=i.parentNode.parentNode;
             toBEdeleted.style.display='none';
             k--;
@@ -51,25 +52,27 @@ function addElement(text)
             localStorage.removeItem(toBEdeleted.innerText);
         })
     } 
-    let checker=document.querySelectorAll('.far');
     
-    for(let j of checker)
-    {   
-        j.addEventListener('click',()=>{
-            console.log(j.classList.contains('fa-check-square'));
-                console.log(j.parentNode.parentNode.innerText);
-                j.classList.toggle('fa-check-square');
-                j.classList.toggle('fa-square');
-                // if(j.classList.contains('color'))
-                // {
-                //     j.classList.remove('color');
-                // }
-                // else 
-                // {
-                //    j.classList.add('color');
-                // }
-        }) 
-    }  
+    // console.log(checker.length);
+    let p=0;
+    let checker=document.querySelectorAll('.far');
+    // document.querySelector('.scroll').addEventListener('click',(e)=>{
+    //     console.log(e.target.classList);
+    //     e.target.classList.toggle('fa-check-square');
+    //     e.target.classList.toggle('fa-square');
+
+    // })
+
+    // for(let j of checker)
+    // {   
+    //     console.log(j);
+    //     j.addEventListener('click',function(){
+    //         console.log(j.classList.contains('fa-check-square'));
+    //             console.log(j.parentNode.parentNode.innerText);
+    //             j.classList.toggle('fa-check-square');
+    //             j.classList.toggle('fa-square');
+    //     }) 
+    // }  
     
     
 }
@@ -100,4 +103,10 @@ btn.addEventListener('click',()=>{
     localStorage.setItem(text,k);
     addElement(text);
     }
+})
+document.querySelector('.scroll').addEventListener('click',(e)=>{
+    console.log(e.target.classList);
+    e.target.classList.toggle('fa-check-square');
+    e.target.classList.toggle('fa-square');
+
 })
