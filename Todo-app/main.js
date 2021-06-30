@@ -2,6 +2,7 @@ const main=document.querySelector('.container');
 const btn=document.querySelector('.btn');
 const content=document.querySelector('.write');
 const newdiv=document.createElement('div');
+
 main.appendChild(newdiv);
 newdiv.classList.add('scroll');
 let k=0;
@@ -44,9 +45,15 @@ function addElement(text)
             toBEdeleted.style.display='none';
             console.log(toBEdeleted);
             k--;
+            if(k<5)
+            {
+                newdiv.style.height="";
+                newdiv.style.overflowY="";
+            }
             localStorage.removeItem(toBEdeleted.innerText);
         })
-    }     
+    }  
+    
 }
 for(let i=0;i<localStorage.length;i++)
 {
@@ -61,11 +68,28 @@ btn.addEventListener('click',()=>{
     if(text!=""){
     localStorage.setItem(text,k);
     addElement(text);
+    let checked=document.querySelectorAll('.far');
+    for(let i of checked)
+    {   console.log('yo');
+        i.addEventListener('click',()=>{
+            const tick=i.parentNode.parentNode;
+            if(i.classList.contains('fa-square'))
+            {
+                i.classList.remove('fa-square');
+                i.classList.add('fa-check-square');
+            }
+            else{
+                i.classList.add('fa-square');
+                i.classList.remove('fa-check-square');
+            }
+            
+        })
+    }  
     }
 })
-const checked=document.querySelectorAll('.far');
-for(let i of checked)
-    {
+let checker=document.querySelectorAll('.far');
+for(let i of checker)
+    {   console.log('out');
         i.addEventListener('click',()=>{
             const tick=i.parentNode.parentNode;
             if(i.classList.contains('fa-square'))
