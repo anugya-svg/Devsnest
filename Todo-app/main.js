@@ -6,7 +6,6 @@ const newdiv=document.createElement('div');
 main.appendChild(newdiv);
 newdiv.classList.add('scroll');
 let k=0;
-list=[];
 function addElement(text)
 {
     k++;
@@ -36,14 +35,13 @@ function addElement(text)
         newdiv.style.overflowY="scroll";
         
     }
-    const dltprop=document.querySelectorAll('.fas');
+    let dltprop=document.querySelectorAll('.fas');
     
     for(let i of dltprop)
     {
         i.addEventListener('click',()=>{
             const toBEdeleted=i.parentNode.parentNode;
             toBEdeleted.style.display='none';
-            console.log(toBEdeleted);
             k--;
             if(k<5)
             {
@@ -52,13 +50,46 @@ function addElement(text)
             }
             localStorage.removeItem(toBEdeleted.innerText);
         })
+    } 
+    let checker=document.querySelectorAll('.far');
+    
+    for(let j of checker)
+    {   
+        j.addEventListener('click',()=>{
+            console.log(j.classList.contains('fa-check-square'));
+                console.log(j.parentNode.parentNode.innerText);
+                j.classList.toggle('fa-check-square');
+                j.classList.toggle('fa-square');
+                // if(j.classList.contains('color'))
+                // {
+                //     j.classList.remove('color');
+                // }
+                // else 
+                // {
+                //    j.classList.add('color');
+                // }
+        }) 
     }  
+    
+    
+}
+function searchKeyPress(e)
+{
+    e = e || window.event;
+    if (e.keyCode === 13)
+    {
+        let text=content.value;
+        if(text!=""){
+        localStorage.setItem(text,k);
+        addElement(text);
+        }
+      
+    }
     
 }
 for(let i=0;i<localStorage.length;i++)
 {
     let raw=localStorage.key(i);
-    // let text=localStorage.getItem(raw);
     addElement(raw);
 
 }
@@ -68,39 +99,5 @@ btn.addEventListener('click',()=>{
     if(text!=""){
     localStorage.setItem(text,k);
     addElement(text);
-    let checked=document.querySelectorAll('.far');
-    for(let i of checked)
-    {   console.log('yo');
-        i.addEventListener('click',()=>{
-            const tick=i.parentNode.parentNode;
-            if(i.classList.contains('fa-square'))
-            {
-                i.classList.remove('fa-square');
-                i.classList.add('fa-check-square');
-            }
-            else{
-                i.classList.add('fa-square');
-                i.classList.remove('fa-check-square');
-            }
-            
-        })
-    }  
     }
 })
-let checker=document.querySelectorAll('.far');
-for(let i of checker)
-    {   console.log('out');
-        i.addEventListener('click',()=>{
-            const tick=i.parentNode.parentNode;
-            if(i.classList.contains('fa-square'))
-            {
-                i.classList.remove('fa-square');
-                i.classList.add('fa-check-square');
-            }
-            else{
-                i.classList.add('fa-square');
-                i.classList.remove('fa-check-square');
-            }
-            
-        })
-    }  
