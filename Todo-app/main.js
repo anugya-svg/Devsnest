@@ -46,23 +46,7 @@ function addElement(text)
             k--;
             localStorage.removeItem(toBEdeleted.innerText);
         })
-    } 
-    // for(let i of checked)
-    // {
-    //     i.addEventListener('click',()=>{
-    //         const tick=i.parentNode.parentNode;
-    //         if(i.classList.contains('fa-square'))
-    //         {
-    //             i.classList.remove('fa-square');
-    //             i.classList.add('fa-check-square');
-    //         }
-    //         else{
-    //             i.classList.add('fa-square');
-    //             i.classList.remove('fa-check-square');
-    //         }
-            
-    //     })
-    // }      
+    }     
 }
 for(let i=0;i<localStorage.length;i++)
 {
