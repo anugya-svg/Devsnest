@@ -15,11 +15,15 @@ function addElement(text)
     task.classList.add('task','outside');
     content.value="";
     span=document.createElement('span');
+    check=document.createElement('span');
     dlt=document.createElement('i');
+    box=document.createElement('i');
+    box.classList.add('far', 'fa-square');
     dlt.classList.add('fas', 'fa-trash-alt');
+    check.appendChild(box);
     span.appendChild(dlt);
     task.appendChild(span);
-    span.classList.add('img');
+    task.appendChild(check);
     if(k<5)
     {
         newdiv.style.height="";
@@ -32,6 +36,7 @@ function addElement(text)
         
     }
     const dltprop=document.querySelectorAll('.fas');
+    
     for(let i of dltprop)
     {
         i.addEventListener('click',()=>{
@@ -41,7 +46,23 @@ function addElement(text)
             k--;
             localStorage.removeItem(toBEdeleted.innerText);
         })
-    }       
+    } 
+    // for(let i of checked)
+    // {
+    //     i.addEventListener('click',()=>{
+    //         const tick=i.parentNode.parentNode;
+    //         if(i.classList.contains('fa-square'))
+    //         {
+    //             i.classList.remove('fa-square');
+    //             i.classList.add('fa-check-square');
+    //         }
+    //         else{
+    //             i.classList.add('fa-square');
+    //             i.classList.remove('fa-check-square');
+    //         }
+            
+    //     })
+    // }      
 }
 for(let i=0;i<localStorage.length;i++)
 {
@@ -58,4 +79,20 @@ btn.addEventListener('click',()=>{
     addElement(text);
     }
 })
-
+const checked=document.querySelectorAll('.far');
+for(let i of checked)
+    {
+        i.addEventListener('click',()=>{
+            const tick=i.parentNode.parentNode;
+            if(i.classList.contains('fa-square'))
+            {
+                i.classList.remove('fa-square');
+                i.classList.add('fa-check-square');
+            }
+            else{
+                i.classList.add('fa-square');
+                i.classList.remove('fa-check-square');
+            }
+            
+        })
+    }  
