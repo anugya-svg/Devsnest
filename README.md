@@ -1,4 +1,7 @@
-![Devsnest](https://socialify.git.ci/anugya-svg/Devsnest/image?description=1&descriptionEditable=Devsnest%20Tha%20Links%20&font=Bitter&owner=1&pattern=Signal&theme=Light)
+<!-- ![Devsnest](https://socialify.git.ci/anugya-svg/Devsnest/image?description=1&descriptionEditable=Devsnest%20Tha%20Links%20&font=Bitter&owner=1&pattern=Signal&theme=Light) -->
+<!-- <img src="https://socialify.git.ci/anugya-svg/Devsnest/image?description=1&descriptionEditable=Devsnest%20Tha%20Links%20&font=Bitter&owner=1&pattern=Signal&theme=Dark" alt="Devsnest" width="640" height="320" /> -->
+<img src="https://socialify.git.ci/anugya-svg/Devsnest/image?description=1&descriptionEditable=Devsnest%20Tha%20Links%20&font=Bitter&owner=1&pattern=Signal&theme=Dark" alt="Devsnest" width="640" height="200" />
+
 - [Tha 1/2-Letter](https://anugya-svg.github.io/Devsnest/letter/letter.html)
 - [Tha 3-Resume](https://anugya-svg.github.io/Devsnest/resume/resume.html)
 - [Tha 4-Watch](https://anugya-svg.github.io/Devsnest/watch/watch.html)
