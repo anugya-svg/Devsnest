@@ -3,3 +3,38 @@
     margin:0;
     box-sizing: border-box;
 }
+.container{
+    display:flex;
+}
+.main{
+    margin:0 auto;
+    text-align: center;
+}
+h1{
+    margin:5px;
+    text-shadow: 2px 2px 2px #CCCCCC;
+    letter-spacing: 1px;
+    background-color:#f1f1f1 ;
+}
+#form{
+    margin:10px ;
+}
+#text{
+    padding:2px;
+    height:30px;
+    margin-bottom:10px;
+    outline: none;
+}
+#text:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border:1px solid rgba(81, 203, 238, 1);
+    
+}
+#btn{
+    height:30px;
+}
+.figure{
+    display:inline-block;
+    margin:10px;
+    border:1px solid black
+}
