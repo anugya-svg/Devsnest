@@ -1,4 +1,5 @@
 # DEVSNEST
+<center>
 
 | DAY | LINK |
 | ---| --- |
@@ -15,6 +16,7 @@
 |12|[Tha 12-ToDo-app](https://anugya-svg.github.io/Devsnest/Todo-app/index.html)|
 |13|[Tha 13-API MAGIC-SHOW SEARCH](https://anugya-svg.github.io/Devsnest/Api_magic/index.html) |
 
+</center>
 
 
 
