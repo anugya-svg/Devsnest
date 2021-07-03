@@ -21,9 +21,46 @@ function showImages(res)
         const fig=document.createElement('figure');
         fig.classList.add('figure');
         const pic=document.createElement('img');
-        console.log(res[i].show.image.medium);
+        const figCap=document.createElement('figcaption');
+        if(res[i].show.name)
+        {
+            const name=res[i].show.name;
+            const p=document.createElement('p');
+            p.innerText=`Name: ${name}`;
+            figCap.appendChild(p);
+        }
+        if(res[i].show.genres)
+        {
+            const genres=res[i].show.genres;
+            const p=document.createElement('p');
+            p.innerText=`Genres: ${genres[0]}`;
+            figCap.appendChild(p);
+        }
+        if(res[i].show.rating.average)
+        {
+            const rating=res[i].show.rating.average;
+            // console.log(rating);
+            const p=document.createElement('p');
+            p.innerText=`Rating: ${rating}`;
+            figCap.appendChild(p);
+        }
+        if(res[i].show.officialSite)
+        {
+            const link=res[i].show.officialSite;
+            console.log(link);
+            const p=document.createElement('p');
+            const a=document.createElement('a');
+            var l = document.createTextNode("Watch");
+            a.appendChild(l); 
+            // a.title='click !'
+            a.href=`${link}`;
+            p.appendChild(a);
+            figCap.appendChild(p);
+        }
+        // console.log(res[i].show.image.medium);
         pic.src=res[i].show.image.medium;
         fig.appendChild(pic);
+        fig.appendChild(figCap);
         imageCont.appendChild(fig);
         }
     }
