@@ -6,7 +6,7 @@ form.addEventListener('submit',async function(e){
     console.log(text.value);
     let val=text.value;
     let config={params:{q:val}};
-    let result=await axios.get(`http://api.tvmaze.com/search/shows/`,config);
+    let result=await axios.get(`https://api.tvmaze.com/search/shows/`,config);
     imageCont.textContent='';
     console.log(result.data);
     showImages(result.data);
