@@ -1,3 +1,4 @@
+
 const grid=document.querySelector('.grid');
 const potter=document.createElement('div');
 let startPoint=150;
@@ -14,6 +15,7 @@ let isGoingRight=false;
 let leftTimerId;
 let rightTimerId;
 let score=0;
+
 function createPotter()
 {
     grid.appendChild(potter);
@@ -69,6 +71,7 @@ function jump()
 {   clearInterval(downTimerId)
     isJumping=true;
     upTimerId=setInterval(function (){
+        document.getElementById('audio').play();
         potterbottomspace+=20;
         potter.style.bottom=potterbottomspace+'px';
         if(potterbottomspace>startPoint+200)
@@ -82,6 +85,7 @@ function fall()
     clearInterval(upTimerId);
     isJumping=false;
     downTimerId=setInterval(function(){
+        document.querySelector('.loss').play();
         potterbottomspace-=5;
         potter.style.bottom=potterbottomspace+'px';
         if(potterbottomspace<=0)
@@ -101,12 +105,14 @@ function fall()
 }
 function gameOver()
 {
+    sessionStorage.setItem("score", score);
     console.log("game over !");
     isGameOver=true;
     while(grid.firstElementChild)
     {
         grid.removeChild(grid.firstChild);
     }
+    location.href="end.html";
     grid.innerHTML=score;
     clearInterval(upTimerId);
     clearInterval(downTimerId);
@@ -188,5 +194,6 @@ function start()
         document.addEventListener('keyup',control);
     }
 }
+
 //in future attach this to button
 start();
