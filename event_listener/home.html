@@ -34,15 +34,24 @@
     </style>
 </head>
 <body>
+    <audio id="myAudio">
+        <source src="opener.wav" >
+        
+      </audio>
+      
+    
     <div class="container">
         <div class="main">
         <img src="potter.png"> 
         <h1>Hi ,I am potter.</h1>
         <a href="index.html" >Let,s play game!</a>
-        
-        
         </div>
     </div>
-    <audio autoplay src="opener.wav"></audio>
+    <script>
+        window.onload=function(){
+        document.getElementById("myAudio").play(); 
+        }
+    </script>
+    
 </body>
 </html>
