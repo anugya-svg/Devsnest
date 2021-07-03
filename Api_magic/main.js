@@ -29,11 +29,21 @@ function showImages(res)
             p.innerText=`Name: ${name}`;
             figCap.appendChild(p);
         }
+        else{
+            const p=document.createElement('p');
+            p.innerText=`Name: N/A`;
+            figCap.appendChild(p);
+        }
         if(res[i].show.genres)
         {
             const genres=res[i].show.genres;
             const p=document.createElement('p');
             p.innerText=`Genres: ${genres[0]}`;
+            figCap.appendChild(p);
+        }
+        else{
+            const p=document.createElement('p');
+            p.innerText=`Genres: N/A`;
             figCap.appendChild(p);
         }
         if(res[i].show.rating.average)
@@ -42,6 +52,11 @@ function showImages(res)
             // console.log(rating);
             const p=document.createElement('p');
             p.innerText=`Rating: ${rating}`;
+            figCap.appendChild(p);
+        }
+        else{
+            const p=document.createElement('p');
+            p.innerText=`Rating: N/A`;
             figCap.appendChild(p);
         }
         if(res[i].show.officialSite)
@@ -55,6 +70,11 @@ function showImages(res)
             // a.title='click !'
             a.href=`${link}`;
             p.appendChild(a);
+            figCap.appendChild(p);
+        }
+        else{
+            const p=document.createElement('p');
+            p.innerText=`link-404`;
             figCap.appendChild(p);
         }
         // console.log(res[i].show.image.medium);
