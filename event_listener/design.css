@@ -1,21 +1,28 @@
+.container{
+    display:flex;
+}
 .grid{
+    margin:0 auto;
     width:400px;
     height:600px;
-    background-color: yellow;
+    /* background-color: yellow; */
     position:relative;
     font-size: 200px;
     text-align:center;
+    background-image: url('bg.png');
 }
 .potter{
     width:60px;
     height:85px;
-    background-color: red;
+    /* background-color: red; */
     position:absolute;
+    background-image: url('potter.png');
 
 }
 .platform{
+    background-image: url('platform.png');
     width:85px;
     height:15px;
-    background-color: green;
+    /* background-color: green; */
     position:absolute;
 }
