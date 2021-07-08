@@ -18,6 +18,7 @@
 |14|[Tha 14-EventListener-Potter Jump](https://anugya-svg.github.io/Devsnest/event_listener/home.html) |
 |15|[Tha 15-HelloWorld-react](https://anugya-svg.github.io/Devsnest/HelloWorld/index.html) |
 |16.1|[Tha 16-Meme_Card](https://anugya-svg.github.io/Devsnest/meme_card/build/index.html) |
+|16.2|[Tha 16-Chess_board](https://anugya-svg.github.io/Devsnest/chess_board/build/index.html) |
 </center>
 
 
