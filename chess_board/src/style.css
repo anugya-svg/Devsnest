@@ -1,0 +1,28 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+}
+.board{
+    margin:auto;
+    width:280px;
+    height:280px;
+    display: flex;
+    flex-wrap: wrap;
+    border:5px solid black;
+}
+.block{
+    width:calc( 270px/9);
+    height:calc(270px/9);
+}
+.block:nth-child(odd){
+    background-color:black;
+}
+.block:nth-child(even){
+    background-color:white;
+}
