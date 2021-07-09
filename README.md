@@ -19,6 +19,7 @@
 |15|[Tha 15-HelloWorld-react](https://anugya-svg.github.io/Devsnest/HelloWorld/index.html) |
 |16.1|[Tha 16-Meme_Card](https://anugya-svg.github.io/Devsnest/meme_card/build/index.html) |
 |16.2|[Tha 16-Chess_board](https://anugya-svg.github.io/Devsnest/chess_board/build/index.html) |
+|17|[Tha 16-Calorie Reader](https://anugya-svg.github.io/Devsnest/calorie_reader/build/index.html) |
 </center>
 
 
