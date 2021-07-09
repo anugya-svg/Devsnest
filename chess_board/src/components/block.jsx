@@ -1,11 +1,13 @@
 const Board=()=>{
     let list=[];
-    for(let i=0;i<9;i++)
+    for(let i=0;i<8;i++)
     {
-        for(let j=0;j<9;j++)
+        for(let j=0;j<8;j++)
         {
-            
-            list.push(<div className="block"></div>)
+            if(i%2===0)
+            list.push(<div className="black"></div>)
+            else
+            list.push(<div className="white"></div>)
             
         }
     }

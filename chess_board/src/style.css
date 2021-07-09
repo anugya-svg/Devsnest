@@ -16,13 +16,23 @@
     flex-wrap: wrap;
     border:5px solid black;
 }
-.block{
-    width:calc( 270px/9);
-    height:calc(270px/9);
+.black{
+    width:calc( 270px/8);
+    height:calc(270px/8);
 }
-.block:nth-child(odd){
+.white{
+    width:calc( 270px/8);
+    height:calc(270px/8);
+}
+.black:nth-child(odd){
     background-color:black;
 }
-.block:nth-child(even){
+.black:nth-child(even){
     background-color:white;
+}
+.white:nth-child(odd){
+    background-color:white;
+}
+.white:nth-child(even){
+    background-color:black;
 }

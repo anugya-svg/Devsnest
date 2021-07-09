@@ -1,0 +1,2 @@
+*{padding:0;margin:0;box-sizing:border-box}.container{width:100vw;height:100vh;display:flex}.board{margin:auto;width:280px;height:280px;display:flex;flex-wrap:wrap;border:5px solid #000}.black,.white{width:33.75px;height:33.75px}.black:nth-child(odd){background-color:#000}.black:nth-child(2n),.white:nth-child(odd){background-color:#fff}.white:nth-child(2n){background-color:#000}
+/*# sourceMappingURL=main.eeebd20f.chunk.css.map */
