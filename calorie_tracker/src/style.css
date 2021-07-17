@@ -1,0 +1,49 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    
+    width:100vw;
+    justify-content: center;
+    display: flex;
+}
+.input-text{
+    margin:5px;
+    width:15vw;
+    height:30px;
+}
+.btn-add{
+    display:flex;
+    width:calc(2*15vw + 10px);
+    height:30px;
+    flex-direction: column;
+    align-items: center;
+    margin:5px;
+    padding:1%;
+}
+.card-added{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    width:calc(2*14vw);
+    margin:20px;
+    flex-direction: column;
+}
+.content{
+    width:100%;
+    
+    border:1px solid grey;
+    margin:2%;
+}
+.container h3{
+    padding:5px;
+}
+.container h4{
+    padding:5px;
+}
+.container button{
+    margin:5px;
+    padding:5px;
+}

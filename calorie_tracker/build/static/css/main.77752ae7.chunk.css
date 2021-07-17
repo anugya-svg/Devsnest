@@ -1,0 +1,2 @@
+*{padding:0;margin:0;box-sizing:border-box}.container{width:100vw;justify-content:center;display:flex}.input-text{margin:5px;width:15vw;height:30px}.btn-add{width:calc(30vw + 10px);height:30px;margin:5px;padding:1%}.btn-add,.card-added{display:flex;flex-direction:column;align-items:center}.card-added{text-align:center;width:28vw;margin:20px}.content{width:100%;border:1px solid grey;margin:2%}.container h3,.container h4{padding:5px}.container button{margin:5px;padding:5px}
+/*# sourceMappingURL=main.77752ae7.chunk.css.map */
