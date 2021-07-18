@@ -2,10 +2,9 @@ import { useState } from "react"
 const Box=(props)=>{
     const {id,title,amount,setItem,item}=props
     const [isEdit,setIsEdit]=useState(false)
-    const [editData,setEditData]=useState({
-        title:title,
-        amount:amount
-    })
+    const [editCals,setEditCals]=useState(title)
+    const [editAm,setEditAm]=useState(amount)
+
    function handleClick(){
        console.log(id)
         const newItems=item.filter(crazy=>item.indexOf(crazy)!==id)
@@ -14,53 +13,41 @@ const Box=(props)=>{
    function handleOnEdit(){
        setIsEdit(true)
    }
-   function handleOnDataChange(e){
-       const title=e.target.name
-       const value=e.target.value
-       console.log(title)
-       console.log(value)
-      setEditData(current => [{ ...current,title:value}])
-      
-
-    console.log(editData)
+   function handleCalsChange(e){
+       
+      setEditCals(e.target.value);
+     
    }
+   function handleAmChange(e){
+       
+    setEditAm(e.target.value);
+    
+ }
    function handleOnSave(){
-       console.log("yes",editData)
-       console.log(id)
-        const newItem=item.map((crazy,ind)=>{
+       const newItem=item.filter((crazy,ind)=>{
             if(ind===id)
             {   
-                console.log(ind)
-                console.log('ds',editData.title)
-                return{
-                    
-                    ...crazy,
-                    title:editData.title,
-                    amount:editData.amount
-
-                }
+                crazy.title=editCals;
+                crazy.amount=editAm;
             }
-            else{
-                return crazy
-            }
+            return crazy;
         })
-        console.log(newItem)
         setItem(newItem)
         setIsEdit(false)
    }
     return(
         <div className="content">
-            { isEdit ? (<input name="title" value={editData.title} onChange={handleOnDataChange}/>):
+            { isEdit ? (<input name="title" value={editCals} onChange={handleCalsChange} className="changes" type="text"/>):
                 (<h3>{title}</h3>)
             }
             {
-                isEdit ?(<input name="amount" value={editData.amount}
-                onChange={handleOnDataChange}/>):(<h4>You have consumed {amount} Calories</h4>)
+                isEdit ?(<input name="amount" value={editAm}
+                onChange={handleAmChange} className="changes" type="number"/>):(<h4>You have consumed {amount} Calories</h4>)
             }
             {
-                isEdit?(<button onClick={handleOnSave}>Save</button>):(<button onClick={handleOnEdit}>Edit</button>)
+                isEdit?(<button onClick={handleOnSave} className="save">Save</button>):(<button onClick={handleOnEdit} className="edit">Edit</button>)
             }
-            <button onClick={handleClick}>Delete</button>
+            <button onClick={handleClick} className="dlt">Delete</button>
         </div>
     )
 }

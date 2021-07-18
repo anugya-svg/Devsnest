@@ -23,7 +23,7 @@
 |18|[Tha 18-Chess_board](https://anugya-svg.github.io/Devsnest/chess_board/build/index.html) |
 |19|[Tha 19-Counter](https://anugya-svg.github.io/Devsnest/counter/build/index.html) |
 |20|[Tha 20-Calorie Reader](https://anugya-svg.github.io/Devsnest/calorie_reader/build/index.html) |
-|20|[Tha 21-Calorie Tracker](https://anugya-svg.github.io/Devsnest/calorie_tracker/build/index.html) |
+|21|[Tha 21-Calorie Tracker](https://anugya-svg.github.io/Devsnest/calorie_tracker/build/index.html) |
 
 </center>
 

@@ -22,6 +22,12 @@
     align-items: center;
     margin:5px;
     padding:1%;
+    background-color:grey;
+    color:#fff;
+    border:1px solid grey;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
 }
 .card-added{
     display:flex;
@@ -33,7 +39,6 @@
 }
 .content{
     width:100%;
-    
     border:1px solid grey;
     margin:2%;
 }
@@ -46,4 +51,25 @@
 .container button{
     margin:5px;
     padding:5px;
+}
+.changes{
+    margin:15px 1px;
+}
+.dlt{
+    background-color:#b1134a;
+    color:#fff;
+    border:1px solid rgb(82, 80, 80);
+    border-radius:5px;
+}
+.save{
+    background-color:green;
+    color:#fff;
+    border:1px solid rgb(82, 80, 80);
+    border-radius: 5px;
+}
+.edit{
+    background-color: #28399c;
+    color:white;
+    border:1px solid rgb(82, 80, 80);
+    border-radius: 5px;
 }

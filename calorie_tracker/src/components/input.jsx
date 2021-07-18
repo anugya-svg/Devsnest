@@ -18,7 +18,7 @@ const Entered=()=>{
                 setCalorie(e.target.value)
             }} value={calorie}></input>
             <button className="btn-add" onClick={btnClicked}>Add Item</button>
-            {item.length===0 && <h2>Start Adding item</h2>}
+            {item.length===0 && <h2 style={{textAlign:'center'}}>Start Adding item</h2>}
             <Card item={item} setItem={setItem}/>
         </div>
     )
