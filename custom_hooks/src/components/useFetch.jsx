@@ -5,8 +5,7 @@ function useFetch(url){
     const [isLoading,setIsLoading]=useState(true);
     
     useEffect(()=>{
-        setTimeout(()=>{
-            fetch(url)
+        fetch(url)
             .then(res=>res.json())
             .then((data)=>{
                 console.log(data.results)
@@ -16,7 +15,7 @@ function useFetch(url){
             .catch(err => {
                 console.log("Error Reading data " + err);
               });
-        },2000)
+       
     },[url])
     return {result,isLoading}
 }
