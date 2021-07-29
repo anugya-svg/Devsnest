@@ -1,12 +1,16 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
 .frame {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 440px;
-  height: 440px;
+  width: 400px;
+  height: 400px;
   /* margin-top: -200px;
   margin-left: -200px; */
   transform: translate(-50%,-50%);
@@ -26,7 +30,7 @@
   left: 50%;
   transform: translate(-50%,-50%); 
   display:flex;
-  width:440px;
+  width:400px;
   flex-wrap:wrap;
 
 }
@@ -44,8 +48,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
         /* margin-top: -200px;
         margin-left: -200px; */
         transform: translate(-50%,-50%);
@@ -64,7 +68,7 @@
         left: 50%;
         transform: translate(-50%,-50%); 
         display:flex;
-        width:240px;
+        width:200px;
         flex-wrap:wrap;
       
       }
