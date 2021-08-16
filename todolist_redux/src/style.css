@@ -1,0 +1,25 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background: #DBE6F6;  
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  
+    background: linear-gradient(to right, #C5796D, #DBE6F6) no-repeat center center fixed;
+}
+.btn{
+    margin:0px 10px !important;
+}
+.container{
+    text-align: center;
+    margin:10px;
+}
+.item{
+    margin:20px;
+    
+}
+h3{
+    display: inline-block;
+    margin:10px;
+}
