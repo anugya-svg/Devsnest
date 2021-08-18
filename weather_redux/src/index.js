@@ -1,14 +1,16 @@
+import "bootstrap/dist/css/bootstrap.min.css"
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./components/app";
+import App from './components/app';
+import store  from "./store"
+import {Provider} from "react-redux"
 import "./style.css"
-
 ReactDOM.render(
-  <React.StrictMode>
-    <div class="bg-img"></div>
+  
+    <Provider store={store}>
     <App />
-  </React.StrictMode>
-  ,
+    </Provider>,
   document.getElementById('root')
 );
+
 

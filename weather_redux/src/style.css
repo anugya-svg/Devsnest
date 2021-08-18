@@ -1,77 +1,91 @@
-
-* {
-    padding: 0px;
-    margin: 0px;
+*{
+    padding:0;
+    margin:0;
     box-sizing: border-box;
 }
-
-.bg-img {
-    height: 100vh;
-    background-image: url('https://cdn.wallpapersafari.com/7/81/oi3Hvs.jpg');
-    filter: blur(5px);
-    z-index: -1;
-    position: fixed;
-    left: 0;
-    right: 0;
+body{
+    background-color: #DEDDDD;
 }
-
-.app {
-    z-index: 2;
+.app{
     text-align: center;
-    
 }
-
 .form {
     display: flex;
     justify-content: center;
 }
-
-.form button {
-    margin: 100px 10px 0 10px;
+.form input{
+    padding:5px;
+    margin-top:50px;
 }
-
-.form input {
-    margin-top: 100px;
-    padding: 0 10px;
-
+.form button{
+    margin :50px 0px 0 10px;
 }
-
-.card {
-    background: linear-gradient(135deg, #FD6986 0%, #9a75aa 100%);
-    margin-top: 50px;
-    border-radius: 4px;
-    box-shadow:
-        rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
-        rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
-        rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
-        rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
-        padding:30px 0px;
+.card{
+    margin-top:20px;
+    padding:20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-.temp {
-    font-size: 3rem;
-    font-weight: 500;
-    margin-left:18px;
+.name{
+    color:#05050F;
+    font-size:2rem;
+    font-weight:bolder;
 }
-
-.place {
-    opacity: 0.8;
-}
-
-.extra {
-    font-size: 1rem;
-    font-weight: bolder;
-    margin: 10px 0 0px 0;
-}
-.digit{
+.country{
+    color:#A3A3A5;
     font-size:1.3rem;
-    font-weight: 500;
 }
-.val{
-    font-size:0.8rem;
-    
+
+.temp{
+    color:#EB24C0;
+    font-size:4rem;
+    font-weight: 700;
+    margin-left:35px;
 }
-img{
-    width:80px;
-    height:80px;
+.mini img{
+    margin-bottom: 70px;
+    width:35px;
+}
+.detail{
+    color:#05050F;
+    font-weight: 800;
+}
+.title{
+    color:#A3A3A5;
+    font-weight: bold;
+}
+.text_temp{
+    font-weight: bold;
+    color:#05050F;
+}
+.switch{
+    margin-left:80%;
+    margin-top:20px;
+}
+.card-dark{
+    background-color: #3A224A;
+    margin-top:20px;
+    padding:20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.name-dark{
+    font-size:2rem;
+    font-weight:bolder;
+    color:white;
+}
+.detail-dark{
+    font-weight: 800;
+    color:white;
+}
+.light{
+    color:black;
+
+}
+.dark{
+    color:white;
+}
+.text_temp-dark{
+    color:white;
+    font-weight: bold;
 }

@@ -29,7 +29,9 @@
 |24|[Tha 24-React Router and States ](https://anugya-svg.github.io/Devsnest/react_router/build/index.html) |
 |26|[Tha 26-redux basic ](https://anugya-svg.github.io/Devsnest/redux_basic/build/index.html) |
 |27|[Tha 27-TodoList using redux ](https://anugya-svg.github.io/Devsnest/todolist_redux/build/index.html) |
-|28|[Tha 28-Weather App(using Api) ](https://anugya-svg.github.io/Devsnest/weather_redux/build/index.html) |
+|28|[Tha 28-Weather App(using Api) ](https://anugya-svg.github.io/Devsnest/weather_app/build/index.html) |
+|29|[Tha 29-Weather App(using redux and middleware ) ](https://anugya-svg.github.io/Devsnest/weather_redux/build/index.html) |
+
 
 
 </center>
