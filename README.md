@@ -31,6 +31,10 @@
 |27|[Tha 27-TodoList using redux ](https://anugya-svg.github.io/Devsnest/todolist_redux/build/index.html) |
 |28|[Tha 28-Weather App(using Api) ](https://anugya-svg.github.io/Devsnest/weather_app/build/index.html) |
 |29|[Tha 29-Weather App(using redux and middleware ) ](https://anugya-svg.github.io/Devsnest/weather_redux/build/index.html) |
+|31|[Tha 31-E-Commerce(using redux) ](https://cocky-allen-7068e0.netlify.app/) |
+|33|[Tha 33-Todolist(using Typescript ) ](https://anugya-svg.github.io/Devsnest/todolist_typescript/build/index.html) |
+
+
 
 
 
