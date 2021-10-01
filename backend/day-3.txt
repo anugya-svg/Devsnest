@@ -1,0 +1,27 @@
+SUBSCRIBER : who will recieve messages
+PUBLISHER: who will send messages
+
+
+SUBSCRIBE devsnest(channel)
+SUBSCRIBE devsnest(channel)
+PUBLISH devsnest(channel) "message"			// "messgae" will be recieved by both subscriber.
+
+
+PSUBSCRIBE d*
+PSUBSCRIBE d*
+PUBLISH devsnest/dev/de "message"			//for all publisher starting with d.
+
+
+UNSUBSCRIBE devsnest
+PUNSUBSCRIBE d*
+
+//getting the whole history
+XADD mystream(name) 10000(id) name(key) A(value)
+XADD mystream *(random-id) key value
+XADD mystream MAXLEN 10000 * key value 			// limit no. of entries if cross this limit earlier ones will be deleted
+
+XREAD COUNT 200 STREAMS mystream 0			// read 200 streams starting from 0
+XREAD COUNT 200 STREAMS mystream 100002			// read 200 streams starting from id=10002
+
+XREAD BLOCK 10000 STREAMS mystream 0			//if no msgs from 10s=> disconnect
+XREAD BLOCK 0 STREAMS mystream 10002			// will never disconnect t=0

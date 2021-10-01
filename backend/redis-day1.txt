@@ -1,0 +1,28 @@
+redis-cli //to start
+SET key value // to set key and value to it 
+GET key // to get the value of key
+keys * // to display all the keys
+EXISTS key // to check whether this key is present or not 
+DEL key // to delete the key value pair
+ttl key // time to live (remaining expiration time )
+expire key time // set the expiration time 
+setex key time value // another way to set the expiration time 
+FLUSHALL // to delete all the key value pair 
+lpush array_name value..... // to push the value from the left side in an array
+rpush array_name value... // to push the value from the right side in an array
+lrange array_name 0 -1 // to display element 
+lpop array_name // to remove the element from left side
+rpop array_name // to remove the element from right side
+SADD set_name value.. // to create a set (no duplicates value)
+SMEMBERS set_name // to display all the elements of sets
+HSET object_name key value // to create a object 
+// example
+{
+    person:{
+        name:anugya,
+        age:20
+    }
+}
+HGETALL object_name // to display object all key and value pairs
+HGET object_name key // to display the value to that key 
+ 

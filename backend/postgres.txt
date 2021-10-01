@@ -1,0 +1,13 @@
+Collection of table called database .
+ psql -U postgres (here postgres is username )
+ \l (to see the list of database)
+ DROP DATABASE database_name (to delete any database)
+ CREATE USER user_name WITH PASSWORD 'your_password';
+ CREATE DATABASE database_name;
+  GRANT ALL PRIVILEGES ON DATABASE database_name to user_name;
+  \c database_name (to connect the database)
+  CREATE TABLE table_name(
+      NAME CHAR[50],
+      AGE INT
+  );
+  \d table_name (to display the table content)
